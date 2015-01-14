@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Accelerometer</title>
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<meta charset="utf-8">
+
+		<link href="css/index.css" rel="stylesheet" type="text/css" />
+
+		<script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+		<script type="text/javascript" charset="utf-8" src="js/index.js"></script>
+	</head>
+	<body>
+		<header class="header">
+			<h1>Accelerometer</h1>
+		</header>
+		<div id="showStatus" class="event">
+		  <div class="received"></div>
+		</div>
+		<div class="content">
+			<div class="action-area ch30">
+                <button class="button dh" id="startButton">Start</button>
+				<button class="button dh" id="stopButton">Stop</button>
+			</div>
+			<div class="result-area ch70">
+				<div class="results">
+					<div class="result-info">
+						<div class="cw10">X:</div>
+						<div id="spanDirectionX"></div>
+                        <div class="clear"></div>
+					</div>
+					<div class="result-info">
+						<div class="cw10">Y:</div>
+						<div id="spanDirectionY"></div>
+                        <div class="clear"></div>
+					</div>
+					<div class="result-info">
+						<div class="cw10">Z:</div>
+						<div id="spanDirectionZ"></div>
+                        <div class="clear"></div>
+					</div>
+					<div class="result-info">
+						<div class="cw40">Timestamp:</div>
+						<div id="spanTimeStamp"></div>
+                        <div class="clear"></div>
+					</div>
+				</div>
+				<div class="separator"></div>
+			</div>
+		</div>
+		<footer class="footer">
+			<div>Cordova API Samples</div>
+		</footer>
+	</body>
+</html>
